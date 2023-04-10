@@ -82,8 +82,11 @@ const Statistics = () => {
               featuredJob={featuredJob}
             ></FeaturedJobs>
           ))}
-          
         </div>
+      </div>
+
+      <div className="text-center">
+        <button className="btn btn-outline btn-accent">Button</button>
       </div>
     </>
   );
