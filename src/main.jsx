@@ -7,20 +7,27 @@ import Statistics from './components/Statistics';
 import AppliedJobs from './components/AppliedJobs';
 import Blog from './components/Blog';
 import SingleFeature from './components/SingleFeature';
+import ErrorPage from './components/ErrorPage';
+import Home from './components/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
-        element: <Statistics></Statistics>,
+        element: <Home></Home>,
         loader: () => fetch("jobCategoryList.json"),
       },
       {
-        path: '/:id',
-        element: <SingleFeature></SingleFeature>
+        path: "/:id",
+        element: <SingleFeature></SingleFeature>,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
       },
       {
         path: "/applied",
