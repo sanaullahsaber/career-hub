@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import img from "../assets/All Images/P3OLGJ1 copy 1.png";
 import JobCategoryList from "./JobCategoryList";
+import FeaturedJobs from "./FeaturedJobs";
 const Statistics = () => {
   const jobCategoryList = useLoaderData();
 
@@ -62,7 +63,28 @@ const Statistics = () => {
         </div>
       </div>
 
-      
+      {/* Featured Jobs */}
+      <div className="mt-20 lg:mt-20">
+        <h6 className="text-center font-extrabold text-3xl tracking-wide">
+          Featured Jobs
+        </h6>
+        <p className="text-center font-medium text-base mb-4">
+          Explore thousands of job opportunities with all the information you
+          need. Its your future
+        </p>
+      </div>
+
+      <div className="my-container">
+        <div className="grid gap-6 mb-8 lg:grid-cols-2 sm:grid-cols-2">
+          {featuredJobs.map((featuredJob) => (
+            <FeaturedJobs
+              key={featuredJob.id}
+              featuredJob={featuredJob}
+            ></FeaturedJobs>
+          ))}
+          
+        </div>
+      </div>
     </>
   );
 };
