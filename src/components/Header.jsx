@@ -24,13 +24,13 @@ const Header = () => {
           </label>
           <ul className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <li>
-              <a>Item 1</a>
+              <Link to="/">Statistics</Link>
             </li>
             <li>
-              <a>Parent</a>
+              <Link to="/applied">Applied Jobs</Link>
             </li>
             <li>
-              <a>Item 3</a>
+              <Link to="/blog">Blog</Link>
             </li>
           </ul>
         </div>
