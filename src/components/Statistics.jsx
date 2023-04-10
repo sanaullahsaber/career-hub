@@ -60,6 +60,9 @@ const Statistics = () => {
   ];
   return (
     <div className="my-container">
+      <div className="text-center mt-5 mb-3 text-2xl font-semibold">
+        Assignment Marks 
+      </div>
       <ResponsiveContainer width="100%" aspect={3}>
         <AreaChart width={1000} height={300} data={assignmentMarks}>
           <Area dataKey="name"></Area>
