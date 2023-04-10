@@ -4,7 +4,7 @@ import footer from "../assets/Icons/Group 9969.png";
 const Footer = () => {
   return (
     <>
-      <footer className="mt-20 footer p-10 bg-neutral text-neutral-content">
+      <footer className="mt-20 footer p-10 bg-black text-neutral-content">
         <div className="my-container">
           <h3 className="text-4xl">CareerArena</h3>
           <p>
@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      <footer className="footer items-center p-4 bg-neutral text-neutral-content">
+      <footer className="footer items-center p-4 bg-black text-neutral-content">
         <div className="my-container flex ">
           <div className="items-center grid-flow-col mr-96">
             <p>© 2023 CareerArena - All right reserved</p>

@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const Blog = () => {
   return (
-    <div>
-      Blog page
-    </div>
+    <div></div>
   );
 };
 
