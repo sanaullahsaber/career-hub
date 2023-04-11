@@ -89,7 +89,7 @@ const Home = () => {
       </div>
 
       <div className="text-center">
-        <button className="btn btn-outline btn-accent">Button</button>
+        <button className="btn btn-outline btn-accent">See All Jobs</button>
       </div>
     </>
   );
