@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 const FeaturedJobs = ({ featuredJob }) => {
   const { img, title, subTitle, salary, location, id } = featuredJob;
 
+ 
+
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure>

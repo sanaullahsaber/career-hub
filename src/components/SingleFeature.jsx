@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { CurrencyDollarIcon, CalendarDaysIcon, PhoneIcon, EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid";
+import {
+  CurrencyDollarIcon,
+  CalendarDaysIcon,
+  PhoneIcon,
+  EnvelopeIcon,
+  MapPinIcon,
+} from "@heroicons/react/24/solid";
+import { addToDb } from "../utils/fakeDB";
 
 const SingleFeature = () => {
   const [jobs, setJobs] = useState([]);
@@ -13,6 +20,13 @@ const SingleFeature = () => {
 
   const jobsId = jobs.find((job) => job.id == id);
   // console.log(jobsId);
+
+  // apply now button handler
+  const handleApplyNow = (id) => {
+    console.log(id);
+    addToDb(id);
+  };
+
   return (
     <div>
       <div className=" mt-16 mb-12 text-3xl font-extrabold text-center">
@@ -59,7 +73,9 @@ const SingleFeature = () => {
                 <MapPinIcon className="h-6 w-6 text-gray-500" />
                 <p>Address : {jobsId?.address}</p>
               </div>
-              <button className="btn bg-gradient-to-r from-blue-500 to-purple-500  mt-5">Apply Now</button>
+              <button onClick={() => handleApplyNow(id)} className="btn bg-gradient-to-r from-blue-500 to-purple-500  mt-5">
+                Apply Now
+              </button>
             </div>
           </div>
         </div>

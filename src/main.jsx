@@ -9,6 +9,7 @@ import Blog from './components/Blog';
 import SingleFeature from './components/SingleFeature';
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
+import { productsAndCartData } from './loaders/getApplied&JobData';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
       {
         path: "/applied",
         element: <AppliedJobs></AppliedJobs>,
+        loader: productsAndCartData
       },
       {
         path: "/blog",

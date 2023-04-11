@@ -14,6 +14,8 @@ const Home = () => {
       .then((data) => setFeaturedJobs(data));
   },[])
 
+    
+
   return (
     <>
       <div className="my-container flex flex-col items-center justify-between lg:flex-row">
