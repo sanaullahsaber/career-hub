@@ -5,16 +5,19 @@ import JobCategoryList from "./JobCategoryList";
 import FeaturedJobs from "./FeaturedJobs";
 
 const Home = () => {
-    const jobCategoryList = useLoaderData();
+  const jobCategoryList = useLoaderData();
+  const [showAll, setShowAll] = useState(false);
 
-  const [featuredJobs, setFeaturedJobs] = useState([])
+  const [featuredJobs, setFeaturedJobs] = useState([]);
   useEffect(() => {
     fetch("featuredJobs.json")
       .then((res) => res.json())
       .then((data) => setFeaturedJobs(data));
-  },[])
+  }, []);
 
-    
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
 
   return (
     <>
@@ -79,7 +82,7 @@ const Home = () => {
 
       <div className="my-container">
         <div className="grid gap-6 mb-8 lg:grid-cols-2 sm:grid-cols-2">
-          {featuredJobs.map((featuredJob) => (
+          {featuredJobs.slice(0, showAll ? 6 : 4).map((featuredJob) => (
             <FeaturedJobs
               key={featuredJob.id}
               featuredJob={featuredJob}
@@ -88,9 +91,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="text-center">
-        <button className="btn btn-outline btn-accent">See All Jobs</button>
-      </div>
+      {!showAll && (
+        <div className="text-center">
+          <button
+            onClick={handleShowAll}
+            className="btn btn-outline btn-accent"
+          >
+            See All Jobs
+          </button>
+        </div>
+      )}
     </>
   );
 };
