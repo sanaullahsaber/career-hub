@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "img": "../src/assets/All Images/google-1-1 1.png",
+    "img": "https://i.postimg.cc/cLrWHdsF/google-1-1-1.png",
     "title": "Technical Database Engineer",
     "subTitle": "Google LLC",
     "salary": "100K - 150K",
@@ -12,11 +12,13 @@
     "experiences": "2-3 Years in this field.",
     "phone": "01750-00 00 00",
     "email": "info@gmail.com",
-    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh"
+    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh",
+     "employmentType": "Full-time",
+     "jobLocation": "Remote"
   },
   {
     "id": "2",
-    "img": "../src/assets//All Images/netflix-4 1.png",
+    "img": "https://i.postimg.cc/dVkMFnBX/netflix-4-1.png",
     "title": "Senior Product Designer",
     "subTitle": "Netflix",
     "salary": "100K - 150K",
@@ -27,11 +29,13 @@
     "experiences": "2-3 Years in this field.",
     "phone": "01750-00 00 00",
     "email": "info@gmail.com",
-    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh"
+    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh",
+    "employmentType": "Part-time",
+    "jobLocation": "On-Site"
   },
   {
     "id": "3",
-    "img": "../src/assets/All Images/tesla-9 1.png",
+    "img": "https://i.postimg.cc/c1XP8Pk2/tesla-9-1.png",
     "title": "Software Engineer",
     "subTitle": "Tesla",
     "salary": "100K - 150K",
@@ -42,11 +46,13 @@
     "experiences": "2-3 Years in this field.",
     "phone": "01750-00 00 00",
     "email": "info@gmail.com",
-    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh"
+    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh",
+    "employmentType": "Full-time",
+    "jobLocation": "remote"
   },
   {
     "id": "4",
-    "img": "../src/assets/All Images/google-1-1 1.png",
+    "img": "https://i.postimg.cc/cLrWHdsF/google-1-1-1.png",
     "title": "Treasury Analyst",
     "subTitle": "Google LLC",
     "salary": "100K - 150K",
@@ -57,11 +63,13 @@
     "experiences": "2-3 Years in this field.",
     "phone": "01750-00 00 00",
     "email": "info@gmail.com",
-    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh"
+    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh",
+    "employmentType": "Part-time",
+    "jobLocation": "On-Site"
   },
   {
     "id": "5",
-    "img": "../src/assets//All Images/netflix-4 1.png",
+    "img": "https://i.postimg.cc/dVkMFnBX/netflix-4-1.png",
     "title": "UI/UX Designer",
     "subTitle": "Netflix",
     "salary": "100K - 150K",
@@ -72,11 +80,13 @@
     "experiences": "2-3 Years in this field.",
     "phone": "01750-00 00 00",
     "email": "info@gmail.com",
-    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh"
+    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh",
+    "employmentType": "Full-time",
+    "jobLocation": "remote"
   },
   {
     "id": "6",
-    "img": "../src/assets//All Images/Group 10021.png",
+    "img": "https://i.postimg.cc/yxH6gtfk/Group-10021.png",
     "title": "Cyber Security Officer",
     "subTitle": "Airbnb",
     "salary": "100K - 150K",
@@ -87,6 +97,8 @@
     "experiences": "2-3 Years in this field.",
     "phone": "01750-00 00 00",
     "email": "info@gmail.com",
-    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh"
+    "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh",
+    "employmentType": "Part-time",
+    "jobLocation": "On-Site"
   }
 ]

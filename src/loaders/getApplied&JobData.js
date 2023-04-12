@@ -1,7 +1,5 @@
 import { getStoredCart } from "../utils/fakeDB";
 
-
-
 // setCart(newArr);
 
 export const productsAndCartData = async () => {
@@ -14,9 +12,6 @@ export const productsAndCartData = async () => {
   for (const id in savedCart) {
     const foundProduct = products.find((product) => product.id === id);
     if (foundProduct) {
-      // foundProduct.quantity = savedCart(id);
-      // cartD.push(foundProduct)
-      // setCart([...cart, foundProduct]);
       cartArray.push(foundProduct);
     }
   }

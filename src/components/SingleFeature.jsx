@@ -13,7 +13,7 @@ const SingleFeature = () => {
   const [jobs, setJobs] = useState([]);
   let { id } = useParams();
   useEffect(() => {
-    fetch("featuredJobs.json")
+    fetch("/featuredJobs.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
@@ -49,6 +49,11 @@ const SingleFeature = () => {
           <div className="bg-purple-100 p-5 rounded-lg">
             <div>
               <h1 className="text-3xl mb-3">Job Details</h1>
+              <div className="py-2">
+                <figure>
+                  <img src={jobsId?.img} alt="" />
+                </figure>
+              </div>
               <div className="flex">
                 <CurrencyDollarIcon className="h-6 w-6 text-gray-500" />
                 <p> Salary: {jobsId?.salary}</p>
@@ -73,7 +78,10 @@ const SingleFeature = () => {
                 <MapPinIcon className="h-6 w-6 text-gray-500" />
                 <p>Address : {jobsId?.address}</p>
               </div>
-              <button onClick={() => handleApplyNow(id)} className="btn bg-gradient-to-r from-blue-500 to-purple-500  mt-5">
+              <button
+                onClick={() => handleApplyNow(id)}
+                className="btn bg-gradient-to-r from-blue-500 to-purple-500  mt-5"
+              >
                 Apply Now
               </button>
             </div>

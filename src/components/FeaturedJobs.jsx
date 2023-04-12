@@ -2,7 +2,7 @@ import React from "react";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 const FeaturedJobs = ({ featuredJob }) => {
-  const { img, title, subTitle, salary, location, id } = featuredJob;
+  const { img, title, subTitle, salary, location, id, employmentType,jobLocation } = featuredJob;
 
  
 
@@ -15,8 +15,8 @@ const FeaturedJobs = ({ featuredJob }) => {
         <h2 className="card-title">{title}</h2>
         <h5>{subTitle}</h5>
         <div className="card-actions">
-          <button className="badge badge-outline">Remote</button>
-          <button className="badge badge-outline">Full Time</button>
+          <button className="btn btn-outline btn-info btn-xs">{jobLocation}</button>
+          <button className="btn btn-outline btn-success btn-xs">{employmentType}</button>
         </div>
         <div className="flex gap-4">
           <div className="flex">
@@ -30,7 +30,7 @@ const FeaturedJobs = ({ featuredJob }) => {
         </div>
 
         <div>
-          <Link to={`/${id}`} className="text-left btn btn-outline btn-accent ">
+          <Link to={`/${id}`} className="text-left btn btn-outline btn-accent btn-sm">
             View Details
           </Link>
         </div>

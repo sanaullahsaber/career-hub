@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
-import img from "../assets/All Images/P3OLGJ1 copy 1.png";
+import img from "../../public/assets/All Images/P3OLGJ1 copy 1.png";
 import JobCategoryList from "./JobCategoryList";
 import FeaturedJobs from "./FeaturedJobs";
 
