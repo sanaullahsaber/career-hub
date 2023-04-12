@@ -3,8 +3,8 @@ import React from "react";
 const Blog = () => {
   return (
     <div className="my-container grid grid-cols-1 gap-10">
-      <div class="card  bg-base-100 shadow-xl">
-        <div class="card-body text-center">
+      <div className="card  bg-base-100 shadow-xl">
+        <div className="card-body text-center">
           <h2 className="text-2xl text-blue-600 font-semibold">
             When should you use context API?
           </h2>
@@ -19,8 +19,8 @@ const Blog = () => {
         </div>
       </div>
 
-      <div class="card  bg-base-100 shadow-xl">
-        <div class="card-body text-center">
+      <div className="card  bg-base-100 shadow-xl">
+        <div className="card-body text-center">
           <h2 className="text-2xl text-blue-600 font-semibold">
             What is a custom hook?
           </h2>
@@ -34,8 +34,8 @@ const Blog = () => {
         </div>
       </div>
 
-      <div class="card  bg-base-100 shadow-xl">
-        <div class="card-body text-center">
+      <div className="card  bg-base-100 shadow-xl">
+        <div className="card-body text-center">
           <h2 className="text-2xl text-blue-600 font-semibold">
             What is useRef?
           </h2>
@@ -50,8 +50,8 @@ const Blog = () => {
         </div>
       </div>
 
-      <div class="card  bg-base-100 shadow-xl">
-        <div class="card-body text-center">
+      <div className="card  bg-base-100 shadow-xl">
+        <div className="card-body text-center">
           <h2 className="text-2xl text-blue-600 font-semibold">
             What is useMemo?
           </h2>
