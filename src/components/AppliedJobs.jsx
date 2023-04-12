@@ -28,7 +28,7 @@ const AppliedJobs = () => {
             <div>
               <div className="dropdown dropdown-end dropdown-hover">
                 <label tabIndex={0} className="btn m-1">
-                  Filleter By
+                  Filter By
                 </label>
                 <ul
                   tabIndex={0}
@@ -45,7 +45,7 @@ const AppliedJobs = () => {
             </div>
           </div>
 
-          <div className=" grid w-min-screen gap-6 mb-8 lg:grid-cols-1 sm:grid-cols-1 ml-40">
+          <div className="grid grid-cols-1 gap-6 mb-8 ">
             {cartArray.map((product) => (
               <JobsItem key={product.id} product={product}></JobsItem>
             ))}

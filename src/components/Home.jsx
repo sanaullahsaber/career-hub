@@ -62,7 +62,7 @@ const Home = () => {
         </p>
       </div>
       <div className="my-container">
-        <div className="grid gap-6 mb-8 lg:grid-cols-4 sm:grid-cols-2">
+        <div className="grid gap-6 mb-8 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
           {jobCategoryList.map((job) => (
             <JobCategoryList key={job.id} job={job}></JobCategoryList>
           ))}
@@ -81,7 +81,7 @@ const Home = () => {
       </div>
 
       <div className="my-container">
-        <div className="grid gap-6 mb-8 lg:grid-cols-2 sm:grid-cols-2">
+        <div className="grid gap-6 mb-8 lg:grid-cols-2 sm:grid-cols-1">
           {featuredJobs.slice(0, showAll ? 6 : 4).map((featuredJob) => (
             <FeaturedJobs
               key={featuredJob.id}
