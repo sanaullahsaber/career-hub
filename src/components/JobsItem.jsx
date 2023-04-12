@@ -43,7 +43,7 @@ const JobsItem = ({ product }) => {
           </div>
         </div>
         <div>
-          <Link to={`/job/${id}`} className="btn ">
+          <Link to={`job/${id}`} className="btn ">
             View Details
           </Link>
         </div>
