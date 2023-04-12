@@ -30,7 +30,7 @@ const FeaturedJobs = ({ featuredJob }) => {
         </div>
 
         <div>
-          <Link to={`/${id}`} className="text-left btn btn-outline btn-accent btn-sm">
+          <Link to={`/job/${id}`} className="text-left btn btn-outline btn-accent btn-sm">
             View Details
           </Link>
         </div>

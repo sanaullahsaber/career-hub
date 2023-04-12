@@ -16,7 +16,7 @@ const AppliedJobs = () => {
 
   return (
     <div className="my-container">
-      <div className=" text-3xl font-extrabold text-center">Applied Jobs</div>
+      <div className=" text-3xl font-extrabold text-center my-32">Applied Jobs</div>
       <div>
         <div>
           <div className="flex justify-between mb-16">
