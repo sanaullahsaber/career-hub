@@ -1,5 +1,5 @@
 ## Live Link
-Hosted in Netlify -> [CareerArena]()
+Hosted in Netlify -> [CareerArena](https://benevolent-jalebi-b86ea1.netlify.app/)
 
 
 ## Career Arena Job Website Features
